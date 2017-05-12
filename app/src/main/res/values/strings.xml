@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoWatermark</string>
+    <string name="cat_image_address">https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNpnx2gPTZDs4cBlyscY5AGWBFS8lzaW2TU8kkRNwVsfZWCQ6S</string>
+    <string name="cat_says">Oh Long Johnson</string>
+</resources>
