@@ -69,34 +69,4 @@ class ImageUtil {
         return result;
     }
 
-    static Bitmap addImageWaterMark(final Bitmap src,
-                                    final Bitmap watermarkImage,
-                                    int watermarkOpacity) {
-        Bitmap result = Bitmap.createBitmap(src.getWidth(), src.getHeight(), src.getConfig());
-
-        Paint paint = new Paint();
-        paint.setAlpha(watermarkOpacity);
-
-        Canvas canvas = new Canvas(result);
-        canvas.drawBitmap(src, 0, 0, null);
-        canvas.drawBitmap(watermarkImage, 0, 0, paint);
-
-        return result;
-    }
-
-//    static Bitmap drawRoundedImage(Bitmap bitmap, float height, Canvas canvas) {
-//        BitmapShader shader;
-//        shader = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
-//
-//        Paint paint = new Paint();
-//        paint.setAntiAlias(true);
-//        paint.setShader(shader);
-//
-//        RectF rect = new RectF(0.0f, 0.0f, width, height);
-//
-//// rect contains the bounds of the shape
-//// radius is the radius in pixels of the rounded corners
-//// paint contains the shader that will texture the shape
-//        canvas.drawRoundRect(rect, radius, radius, paint);
-//    }
 }
